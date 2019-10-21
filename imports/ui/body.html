@@ -1,0 +1,36 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>EIT Management Application </h1>
+      <!-- <h3 class="entries">  {{incompleteCount}} entr(ies) selected</h3> -->
+
+      <form class="new-input">
+        <label for="">Full Name:
+        <input type="text" name="name" placeholder="Full name goes here" />
+        </label>
+
+        <label for="">Country:</label>
+        <input type="text" name="country" placeholder="Your Country" />
+
+
+        <label for="">Age: </label>
+        <input type="text" name="age" placeholder="Age goes here" />
+
+        <input type="submit" value="Submit">
+
+
+      </form>
+
+    </header>
+
+
+      {{#each tasks}}
+        {{> task}}
+
+      {{/each}}
+
+
+
+
+  </div>
+</body>
