@@ -6,7 +6,7 @@ import './edit.html';
 
 Template.edit.helpers({
 
-  tasks() {
+  task() {
     const id = FlowRouter.getParam('id');
     		// console.log(id);
     		return Tasks.findOne(id);    },
