@@ -3,10 +3,10 @@ FlowRouter.route('/', {
     action: function(params, queryParams) {
         // console.log("Params:", params);
         // console.log("Query Params:", queryParams);
-        BlazeLayout.render('body');
+        BlazeLayout.render('home');
     },
 
-    name: "body" // optional
+    name: "home" // optional
 });
 
 FlowRouter.route('/edit/:id', {

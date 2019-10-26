@@ -6,7 +6,7 @@ import { Tasks } from '../api/tasks.js';
 import './task.js';
 import './body.html';
 
-Template.body.helpers({
+Template.home.helpers({
 
   tasks() {
 
@@ -14,7 +14,7 @@ Template.body.helpers({
     },
 });
 
-Template.body.events({
+Template.home.events({
   'submit .new-input'(event) {
     // Prevent default browser form submit
     event.preventDefault();
