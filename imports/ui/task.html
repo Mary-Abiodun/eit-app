@@ -1,10 +1,14 @@
 <template name="task">
+
   <p class="{{#if checked}}checked{{/if}}">
+    <button class="edit"><a href="/edit/{{_id}}">Edit </a></button>
     <button class="delete"> &times; </button>
+
 
     <input type="checkbox" checked="{{checked}}" class="toggle-checked">
 
-  <span class="text">
+
+  <span class="text"><strong>{{username}}</strong>
   {{name}}
   {{country}}
   {{age}}</span>

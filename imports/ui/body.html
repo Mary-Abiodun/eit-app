@@ -4,6 +4,9 @@
       <h1>EIT Management Application </h1>
       <!-- <h3 class="entries">  {{incompleteCount}} entr(ies) selected</h3> -->
 
+      {{> loginButtons}}
+
+       {{#if currentUser}}
       <form class="new-input">
         <label for="">Full Name:
         <input type="text" name="name" placeholder="Full name goes here" />
@@ -16,21 +19,21 @@
         <label for="">Age: </label>
         <input type="text" name="age" placeholder="Age goes here" />
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Add EIT">
 
-
+<button class="bulk-delete">Delete EITs</button>
       </form>
 
+
+          {{/if}}
     </header>
+
 
 
       {{#each tasks}}
         {{> task}}
 
       {{/each}}
-
-
-
 
   </div>
 </body>
