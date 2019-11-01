@@ -1,5 +1,5 @@
 {
-  "name": "EIT-app",
+  "name": "am-lost",
   "private": true,
   "scripts": {
     "start": "meteor run",
@@ -8,15 +8,23 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
-    "@babel/runtime": "^7.3.4",
+    "@babel/runtime": "^7.6.3",
     "bcrypt": "^3.0.6",
-    "meteor-node-stubs": "^0.4.1"
+    "bootstrap": "^4.3.1",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "reactstrap": "^8.1.1"
   },
   "meteor": {
     "mainModule": {
-      "client": "client/main.js",
+      "client": "client/main.jsx",
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
   }
 }
